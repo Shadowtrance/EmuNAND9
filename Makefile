@@ -16,7 +16,7 @@ include $(DEVKITARM)/ds_rules
 # INCLUDES is a list of directories containing header files
 # SPECS is the directory containing the important build and link files
 #---------------------------------------------------------------------------------
-export TARGET	:=	EmuNAND9
+export TARGET	:=	EmuNAND9UI
 BUILD		:=	build
 SOURCES		:=	source source/fatfs source/abstraction
 DATA		:=	data
@@ -25,7 +25,7 @@ INCLUDES	:=	include source source/fatfs
 #---------------------------------------------------------------------------------
 # THEME: if set to anything, name of the themes file folder inside resources
 #---------------------------------------------------------------------------------
-THEME	:=	
+THEME	:=	/E9UI
 
 #---------------------------------------------------------------------------------
 # options for code generation

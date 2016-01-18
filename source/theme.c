@@ -39,17 +39,17 @@ void LoadThemeGfxLogo(void) {
     LoadThemeGfx(GFX_LOGO, LOGO_TOP);
     #if defined LOGO_TEXT_X && defined LOGO_TEXT_Y
     if (CheckFS()) {
-        DrawStringF(LOGO_TEXT_X, LOGO_TEXT_Y -  0, LOGO_TOP, "SD storage: %lluMB / %lluMB", RemainingStorageSpace() / (1024*1024), TotalStorageSpace() / (1024*1024));
+        DrawStringF(LOGO_TEXT_X  + 34, LOGO_TEXT_Y -  8, LOGO_TOP, "SD storage: %lluMB / %lluMB", RemainingStorageSpace() / (1024*1024), TotalStorageSpace() / (1024*1024));
     } else {
-        DrawStringF(LOGO_TEXT_X, LOGO_TEXT_Y -  0, LOGO_TOP, "SD storage: unknown filesystem");
+        DrawStringF(LOGO_TEXT_X  + 34, LOGO_TEXT_Y -  8, LOGO_TOP, "SD storage: unknown filesystem");
     }
-    DrawStringF(LOGO_TEXT_X, LOGO_TEXT_Y - 10, LOGO_TOP, "EmuNAND: %s",
+    DrawStringF(LOGO_TEXT_X + 74, LOGO_TEXT_Y - 28, LOGO_TOP, "EmuNAND: %s",
         (emunand_state == RES_EMUNAND_READY) ? "SD is ready" :
         (emunand_state == RES_EMUNAND_GATEWAY) ? "GW EmuNAND" : 
         (emunand_state == RES_EMUNAND_GATEWAY) ? "RedNAND" : "SD not ready" );
     #ifdef WORK_DIR
     if (DirOpen(WORK_DIR)) {
-        DrawStringF(LOGO_TEXT_X, LOGO_TEXT_Y - 20, LOGO_TOP, "Work directory: %s", WORK_DIR);
+        DrawStringF(LOGO_TEXT_X + 48, LOGO_TEXT_Y - 18, LOGO_TOP, "Work directory: %s", WORK_DIR);
         DirClose();
     }
     #endif
