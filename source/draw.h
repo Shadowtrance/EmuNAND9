@@ -21,7 +21,6 @@
 #define COLOR_GREY          RGB(0x77, 0x77, 0x77)
 #define COLOR_PURPLE        RGB(0x66, 0x00, 0xFF)
 #define COLOR_TRANSPARENT   RGB(0xFF, 0x00, 0xEF) // otherwise known as 'super fuchsia'
-#define COLOR_FBLUE         RGB(0x26, 0x60, 0x95) // matches the font text
 
 #ifdef EXEC_GATEWAY
 	#define TOP_SCREEN0 (u8*)(*(u32*)((uint32_t)0x080FFFC0 + 4 * (*(u32*)0x080FFFD8 & 1)))

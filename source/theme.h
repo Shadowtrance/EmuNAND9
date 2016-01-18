@@ -19,6 +19,7 @@
 #define COLOR_BLUE          RGB(0xFF, 0x00, 0xFF)
 #define COLOR_GREY          RGB(0x77, 0x77, 0x77)
 #define COLOR_PURPLE        RGB(0x66, 0x00, 0xFF)
+#define COLOR_FBLUE         RGB(0x26, 0x60, 0x95) // matches the font text
 
 #define LOGO_TOP        true
 #define LOGO_TEXT_X     50
