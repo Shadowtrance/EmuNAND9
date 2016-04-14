@@ -1,6 +1,6 @@
-APP_TITLE = EmuNAND9
+APP_TITLE = EmuNAND9UI
 APP_DESCRIPTION = Open source 3DS EmuNAND format tool
-APP_AUTHOR = d0k3
+APP_AUTHOR = d0k3 & Shadowtrance
 
 PAYLOAD_MEM = 1
 VOODOO = 0xF
